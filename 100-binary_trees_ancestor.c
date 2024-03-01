@@ -37,6 +37,14 @@ binary_tree_t *compare(const binary_tree_t *first, const binary_tree_t *second)
 {
 	binary_tree_t *parents = first->parent;
 
+	if (first == second)
+	{
+		if (first->parent->right == second)
+			return (first->parent->right);
+		else
+			return (first->parent->left);
+	}
+
 	while (parents)
 	{
 		if (parents == second)
