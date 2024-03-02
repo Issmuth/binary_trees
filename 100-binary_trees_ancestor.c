@@ -44,7 +44,7 @@ binary_tree_t *compare(const binary_tree_t *first, const binary_tree_t *second)
 		else
 			return (first->parent->left);
 	}
-	
+
 	if (second->parent->left == second)
 		p_second = second->parent->left;
 	else
